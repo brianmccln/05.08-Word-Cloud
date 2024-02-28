@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>05.08 Word Cloud</title>
+
+    <link href="css/basic-pg-console.log.css" rel="stylesheet">
+    <style>
+        .container {
+            min-height: 100vh;
+            width: 800px;
+        }
+
+        /* the holder of the word cloud 
+        parent element of .word-cloud-div */
+        #word-cloud {
+            width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 30%;
+            background-color: #111;
+            color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            font-family: sans-serif;
+            font-weight: bold;
+            mask-image: url(images/treehouse-silhouette.png);
+        }
+
+        /* each word is in its own div */
+        .word-cloud-div {
+            margin: 2px;
+            padding: 2px;
+            /* border: 2px dashed orange; */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>05.08 Word Cloud</h2>
+
+        <div id="word-cloud"></div>
+
+    </div>
+
+    <script src="js/stopwords.js"></script>
+    <script src="js/chinese-fairy-tales.js"></script>
+    <script src="js/how-to-build-a-treehouse.js"></script>
+
+    <!-- START .js -->
+    <!-- <script src="js/05.08-Word-Cloud-START.js"></script> -->
+
+    <!-- PROG .js -->
+    <script src="js/05.08-Word-Cloud-PROG.js"></script>
+
+    <!-- FINAL .js -->
+    <!-- <script src="js/05.08-Word-Cloud-FINAL.js"></script> -->
+
+</body>
+
+</html>
